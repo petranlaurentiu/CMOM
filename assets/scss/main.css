@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.main__title {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5rem 0;
+}
+.main__title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(0, 82, 255);
+}
+
+.table tr {
+  cursor: pointer;
+}
+.table td {
+  text-align: left;
+}
+.table td div {
+  display: flex;
+  gap: 0.5rem;
+}
+.table td div .symbol {
+  text-transform: uppercase;
+}
+.table .coin__name img {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+}
+.table .coin__symbol {
+  text-transform: uppercase;
+}
+.table .coin__high--price {
+  color: #16c784;
+}
+.table .coin__low--price {
+  color: #ea3943;
+}/*# sourceMappingURL=main.css.map */
