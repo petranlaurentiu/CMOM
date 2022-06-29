@@ -1,3 +1,5 @@
+// Fetching CoinGecko API data and rendering it on the DOM using template literals
+
 function fetchAPI() {
   let url1 =
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false";
@@ -19,7 +21,6 @@ function fetchAPI() {
       );
     })
     .then((data) => {
-      console.log(data);
       let coinList = data
         .map((coin) => {
           return `
