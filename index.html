@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./assets/scss/main.css">
     <script src="./node_modules/axios/dist/axios.min.js" defer></script>
     <script src="./assets/js/bootstrap.bundle.js" defer></script>
-    <script src="./main.js" defer></script>
-
+    <script src="./main.js" async></script>
     <title>Test Project</title>
 </head>
 
@@ -19,23 +18,20 @@
         <div class="main__title">
             <h1>CoinGecko</h1>
         </div>
-        <table class="table table-hover">
-            <thead>
-                <tr class="coin__row">
-                    <th scope="col">Name & Symbol</th>
-                    <th scope="col">Current Price</th>
-                    <th scope="col">24h &#9650;</th>
-                    <th scope="col">24h &#9660; </th>
-                </tr>
-            </thead>
-        </table>
+        <main class="mb-5 pb-5">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="coin__row">
+                        <th scope="col">Name & Symbol</th>
+                        <th scope="col">Current Price</th>
+                        <th scope="col">24h &#9650;</th>
+                        <th scope="col">24h &#9660; </th>
+                    </tr>
+                </thead>
+            </table>
+            <code>Click on each Coin to get more information about it!</code>
+        </main>
     </div>
-
-    <div class="container">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            </div>
-          </div>
-    </div>
-
 </body>
+
 </html>

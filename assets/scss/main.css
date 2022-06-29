@@ -21,6 +21,14 @@ body {
   color: rgb(0, 82, 255);
 }
 
+.table a {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+  color: #000;
+}
 .table tr {
   cursor: pointer;
 }
@@ -30,21 +38,43 @@ body {
 .table td div {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .table td div .symbol {
   text-transform: uppercase;
 }
-.table .coin__name img {
+.table .coin__info img {
   height: 24px;
   width: 24px;
   border-radius: 12px;
-}
-.table .coin__symbol {
-  text-transform: uppercase;
 }
 .table .coin__high--price {
   color: #16c784;
 }
 .table .coin__low--price {
   color: #ea3943;
+}
+.table .coin__title p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table .coin__description {
+  text-transform: capitalize;
+}
+.table .coin__description--inner {
+  width: 100%;
+  line-height: 1.2em;
+  height: 3.6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.table .coin__market {
+  text-transform: capitalize;
+}
+.table .coin__homepage {
+  text-decoration: underline;
+  color: #0d6efd;
 }/*# sourceMappingURL=main.css.map */

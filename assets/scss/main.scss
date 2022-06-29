@@ -22,6 +22,15 @@ body {
   }
 }
 .table{
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .4rem;
+    color: #000;
+  }
+
   tr {
     cursor: pointer;
   }
@@ -30,24 +39,19 @@ body {
     div {
       display: flex;
       gap: .5rem;
+      flex-wrap: wrap;
       .symbol {
         text-transform: uppercase;
       }
     }
   }
   .coin {
-    &__name {
+    &__info {
       img {
         height: 24px;
         width: 24px;
         border-radius: 12px;
       }
-    }
-    &__symbol {
-      text-transform: uppercase;
-    }
-    &__image{
-    
     }
     &__high {
       &--price {
@@ -58,6 +62,33 @@ body {
       &--price {
         color: #ea3943;
       }
+    }
+    &__title {
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    }
+    &__description {
+      &--inner {
+        width: 100%;
+      line-height: 1.2em;
+      height: 3.6em;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      }
+      text-transform: capitalize;
+    }
+    &__market {
+      text-transform: capitalize;
+    }
+    &__homepage {
+      text-decoration: underline;
+      color: #0d6efd;
     }
   }
 }
